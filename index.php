@@ -1,7 +1,7 @@
 <?php
 // 引入jssdk.php
 require_once "jssdk.php";
-$jssdk = new JSSDK("wx84e111b462a08abb", "d1572926dee5fd494cff00b60467dc4c");
+$jssdk = new JSSDK("yourAppID", "yourAppSecret");
 // 获取signPackage数组
 $signPackage = $jssdk->GetSignPackage();
 // 得到 JSSDK文件中的$signPackage

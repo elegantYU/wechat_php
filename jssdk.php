@@ -21,7 +21,7 @@ class JSSDK
         // 获取随机字符串
         $nonceStr = $this->createNonceStr();
 
-        // 这里参数的顺序要按照 key 值 ASCII 码升序排序
+        // 这里参数的顺序要按照 key 值 ASCII 码升序排序 生成signature
         $string = "jsapi_ticket=$jsapiTicket&noncestr=$nonceStr&timestamp=$timestamp&url=$url";
     
         // 使用sha1 加密
